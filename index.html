@@ -1,0 +1,440 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MZUKI | Feel Every Beat</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Cinzel:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- JavaScript -->
+    <script src="js/script.js" defer></script>
+
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <img src="images/mzuki-logo.jpg" alt="MZUKI Official Logo">
+        </div>
+
+        <nav class="navigation">
+
+            <p class="nav-heading">DISCOVER</p>
+
+            <a href="#" class="nav-link active" data-page="home">
+                <span>⌂</span> Home
+            </a>
+
+            <a href="#" class="nav-link" data-page="explore">
+                <span>⌕</span> Explore Music
+            </a>
+
+            <a href="#" class="nav-link" data-page="trending">
+                <span>♬</span> Trending
+            </a>
+
+            <a href="#" class="nav-link" data-page="artists">
+                <span>♙</span> Artists
+            </a>
+
+
+            <p class="nav-heading">YOUR COLLECTION</p>
+
+            <a href="#" class="nav-link" data-page="library">
+                <span>▤</span> My Library
+            </a>
+
+            <a href="#" class="nav-link" data-page="favorites">
+                <span>♡</span> Favourite Songs
+            </a>
+
+            <a href="#" class="nav-link" data-page="playlists">
+                <span>☷</span> My Playlists
+            </a>
+
+
+            <p class="nav-heading">COMMUNITY</p>
+
+            <a href="#" class="nav-link" data-page="ratings">
+                <span>★</span> My Ratings
+            </a>
+
+            <a href="#" class="nav-link" data-page="profile">
+                <span>♙</span> My Profile
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <div class="sidebar-message">
+                <span class="snowflake">❄</span>
+
+                <p>Music brings us together.</p>
+
+                <small>Feel every beat.</small>
+            </div>
+
+            <p class="copyright">© 2026 MZUKI</p>
+
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+
+        <!-- TOP NAVIGATION -->
+        <header class="topbar">
+
+            <div class="search-box">
+
+                <span>⌕</span>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search songs, albums or artists..."
+                >
+
+            </div>
+
+
+            <div class="topbar-right">
+
+                <button class="upload-btn" id="uploadButton">
+                    + Add Music
+                </button>
+
+                <button class="notification-btn" aria-label="Notifications">
+                    ♧
+                </button>
+
+                <div class="profile-icon">M</div>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- HOME PAGE -->
+        <section id="homePage" class="page-section">
+
+
+            <!-- HERO SECTION -->
+            <section class="hero">
+
+                <div class="hero-content">
+
+                    <p class="hero-label">
+                        <span class="snowflake">❄</span>
+                        WELCOME TO MZUKI
+                    </p>
+
+                    <h1>
+                        Your music.<br>
+                        <span>Your world.</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        Discover incredible music, support your
+                        favourite artists and share your taste
+                        with the world.
+                    </p>
+
+                    <button class="explore-btn" id="exploreButton">
+                        Explore Music <span>→</span>
+                    </button>
+
+                </div>
+
+
+                <div class="hero-decoration">
+
+                    <div class="hero-circle">
+                        <span>♫</span>
+                    </div>
+
+                    <div class="hero-small-text">
+                        DISCOVER · LISTEN · RATE
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- QUICK STATS -->
+            <section class="stats-section">
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">♫</div>
+
+                    <div>
+                        <h3>Music</h3>
+                        <p>Discover new sounds</p>
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">★</div>
+
+                    <div>
+                        <h3>Rate</h3>
+                        <p>Share your opinion</p>
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">♙</div>
+
+                    <div>
+                        <h3>Artists</h3>
+                        <p>Support creators</p>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- TRENDING MUSIC -->
+            <section class="music-section">
+
+                <div class="section-header">
+
+                    <div>
+
+                        <p class="section-label">
+                            WHAT'S POPULAR
+                        </p>
+
+                        <h2>Trending Music</h2>
+
+                    </div>
+
+                    <a href="#" class="see-all">
+                        View all →
+                    </a>
+
+                </div>
+
+
+                <div class="music-grid" id="musicGrid">
+
+                    <!-- JavaScript displays music here -->
+
+                </div>
+
+            </section>
+
+
+
+            <!-- RECENTLY ADDED -->
+            <section class="music-section">
+
+                <div class="section-header">
+
+                    <div>
+
+                        <p class="section-label">
+                            FRESH SOUNDS
+                        </p>
+
+                        <h2>Recently Added</h2>
+
+                    </div>
+
+                    <a href="#" class="see-all">
+                        View all →
+                    </a>
+
+                </div>
+
+
+                <div class="music-grid" id="recentMusic">
+
+                    <!-- JavaScript displays recent music here -->
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ARTIST SECTION -->
+            <section class="artist-section">
+
+                <div class="section-header">
+
+                    <div>
+
+                        <p class="section-label">
+                            THE PEOPLE BEHIND THE MUSIC
+                        </p>
+
+                        <h2>Meet The Artists</h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="artist-placeholder">
+
+                    <div class="artist-symbol">♬</div>
+
+                    <h3>Every artist has a story.</h3>
+
+                    <p>
+                        Discover independent musicians and
+                        support the people creating your music.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+        </section>
+
+
+
+        <!-- MUSIC PLAYER -->
+        <footer class="music-player">
+
+
+            <!-- CURRENT SONG -->
+            <div class="currently-playing">
+
+                <div class="player-cover" id="playerCover">
+                    ♫
+                </div>
+
+                <div class="player-info">
+
+                    <h4 id="playerTitle">
+                        Select a song
+                    </h4>
+
+                    <p id="playerArtist">
+                        Welcome to MZUKI
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PLAYER CONTROLS -->
+            <div class="player-controls">
+
+                <div class="control-buttons">
+
+                    <button id="previousButton" aria-label="Previous song">
+                        |◀
+                    </button>
+
+                    <button
+                        id="playButton"
+                        class="play-button"
+                        aria-label="Play music"
+                    >
+                        ▶
+                    </button>
+
+                    <button id="nextButton" aria-label="Next song">
+                        ▶|
+                    </button>
+
+                </div>
+
+
+                <div class="progress-area">
+
+                    <span id="currentTime">0:00</span>
+
+                    <input
+                        type="range"
+                        id="progressBar"
+                        min="0"
+                        max="100"
+                        value="0"
+                    >
+
+                    <span id="duration">0:00</span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- VOLUME -->
+            <div class="volume-area">
+
+                <span>♫</span>
+
+                <input
+                    type="range"
+                    id="volumeBar"
+                    min="0"
+                    max="1"
+                    step="0.01"
+                    value="0.7"
+                >
+
+            </div>
+
+
+        </footer>
+
+
+    </main>
+
+
+
+    <!-- AUDIO PLAYER -->
+    <audio id="audioPlayer"></audio>
+
+
+    <!-- MUSIC UPLOAD -->
+    <input
+        type="file"
+        id="musicUpload"
+        accept="audio/*"
+        hidden
+    >
+
+
+</body>
+
+</html>
